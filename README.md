@@ -27,7 +27,7 @@ As a busy politician
 I can see all of today's headlines in one place
 So I know what the big stories of the day are
 
-As a busy politician
+As a busy politiciann 
 I can click a link to see the original news article
 So that I can get an in depth understanding of a very important story
 
