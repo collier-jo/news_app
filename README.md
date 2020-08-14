@@ -51,3 +51,21 @@ To make my news reading more fun
 ### Domain Model:
 ### Input/ Output:
 ### Test Ideas:
+
+
+
+### Model:
+Takes the info and return the relevant information 
+
+### View: 
+Adds the html and layout
+
+input| output
+----|------
+data.webtitle | <h1>"This is a webtitle"</h1>
+
+### Controller: 
+Takes the output of the model and gives to the view 
+Takes the output of the view and returns it to the page 
+Have a hash changer 
+

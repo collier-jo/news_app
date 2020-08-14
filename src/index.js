@@ -1,16 +1,23 @@
 window.onload = () => {
-    title("News App")
-    
+    // title("News App")
+
+    var title = document.getElementById("header")
+    title.innerHTML = "Gay Guardian"
 
 }
 
 
-(function(exports){
-    function title(text){
-        title = document.getElementById("header")
-        title.innerHTML = text
+
+
+class Article {
+    constructor(data){
+        this.title = data.webTitle
     }
+}
 
-    exports.title = title
-})(this);
 
+module.exports = Article;
+
+
+/// create node objects 
+// create a new article 
