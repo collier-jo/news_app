@@ -1,18 +1,29 @@
 const HeadlineView = require('../article_view');
+const HeadlineModel = require('../article_model');
 const response = require("../response")
 
 jest.mock("../response")
 
+
+
 describe("Headline View", () => {
-    test("Returns a headline into HTML", () => {
-    
-        let headlineView = new HeadlineView(response)
+    test("ReadOne is called", () => {
 
-        console.log(response.readOne())
+        let testing = new HeadlineModel(response)
 
-        expect(headlineView.convertToHTML()).toEqual("<h1>Mock webTitle</h1>")
-        // to have been called 
-        // to have been called 1 time 
-    })
+        console.log(testing.readOne())
+        const spy = jest.spyOn(testing, "readOne")
+
+        let headlineView = new HeadlineView(testing)
+        headlineView.convertToHTML()
+
+        expect(testing.readOne).toHaveBeenCalled()
+    });
 })
 
+// test('plays video', () => {
+//     const spy = jest.spyOn(video, 'play');
+//     video.play();
+  
+//     expect(spy).toHaveBeenCalledTimes(1);
+//   });
