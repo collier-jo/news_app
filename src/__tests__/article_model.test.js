@@ -1,13 +1,14 @@
 const HeadlineModel = require('../article_model');
+const response = require("../response")
+
+
+jest.mock("../response")
 
 describe("Headline", () => {
     test("Return the title", () => {
 
-        let testResponse = {
-            webTitle: "This is a test webTitle"
-        }
+        var headline = new HeadlineModel(response)
 
-        var headline = new HeadlineModel(testResponse)
-        expect(headline.readOne()).toEqual("This is a test webTitle")
+        expect(headline.readOne()).toEqual("Mock webTitle")
     })
 })

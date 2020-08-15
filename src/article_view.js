@@ -7,7 +7,7 @@ class HeadlineView{
 
   convertToHTML(){
     let headline = this.headline.readOne()
-    return `<h1> ${headline} </h1>`
+    return `<h1>${headline}</h1>`
   }
 
 }

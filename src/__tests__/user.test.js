@@ -1,7 +1,7 @@
-const user = require("../user")
+const user = require("../response")
 
-jest.mock("../user")
+jest.mock("../response")
 
 test("Testing mock users", () => {
-    expect(user.name).toBe("Mock User")
+    expect(user.webTitle).toBe("Mock webTitle")
 })
