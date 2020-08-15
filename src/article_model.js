@@ -1,14 +1,8 @@
-// the model needs to take a json response :
-// return a title 
-
-class HeadlineModel {
-  constructor(data){
-    this.title = data.webTitle 
-  }
-
-  readOne(){
+function HeadlineModel (data) {
+  
+    this.title: data.webTitle,
+    readOne: function(){
     return this.title
   }
 }
 
-module.exports = HeadlineModel;

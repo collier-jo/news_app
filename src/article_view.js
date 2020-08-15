@@ -11,5 +11,3 @@ class HeadlineView{
   }
 
 }
-
-module.exports = HeadlineView;

@@ -1,23 +1,20 @@
+
+
 window.onload = () => {
-    // title("News App")
 
     var title = document.getElementById("header")
     title.innerHTML = "Gay Guardian"
 
+    fetch("https://content.guardianapis.com/search?q=lgbt&api-key=4665f0d4-a8d7-4cb9-b075-047eda99341a")
+    .then(response => response.json())
+    .then((data) => {
+        console.log(data.response.results[0].webTitle)
+        let headlineModel = new HeadlineModel(data.response.results[0])
+        let headlineView = new HeadlineView(headlineModel)
+        let headlineController = new HeadlineController(headlineView)
+
+        return headlineController.addToPage()
+    })
+
+
 }
-
-
-
-
-class Article {
-    constructor(data){
-        this.title = data.webTitle
-    }
-}
-
-
-module.exports = Article;
-
-
-/// create node objects 
-// create a new article 
