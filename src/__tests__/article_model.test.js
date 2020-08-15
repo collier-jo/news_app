@@ -1,13 +1,13 @@
-const HeadlineModel = require('./article_model');
+const HeadlineModel = require('../article_model');
 
 describe("Headline", () => {
     test("Return the title", () => {
 
         let testResponse = {
-            webTitle: "This is a test"
+            webTitle: "This is a test webTitle"
         }
 
         var headline = new HeadlineModel(testResponse)
-        expect(headline.readOne()).toEqual("This is a test")
+        expect(headline.readOne()).toEqual("This is a test webTitle")
     })
 })
