@@ -48,12 +48,19 @@ I can see whizzy animations in the app
 To make my news reading more fun
 ```
 
+
+
+
 ### Domain Model:
-### Input/ Output:
-### Test Ideas:
 
-
-
+Object | Message 
+|------|-------|
+|Model |       |
+|      | constructor - take in webTitle |
+||       returnHeadline |
+|ListModel | |
+||          .add(Headline) | 
+||          .return |
 ### Model:
 Takes the info and return the relevant information 
 
@@ -69,3 +76,5 @@ Takes the output of the model and gives to the view
 Takes the output of the view and returns it to the page 
 Have a hash changer 
 
+/// list model - add / return
+/// controller - takes in a view - adds html - iterates over the  list model 

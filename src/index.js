@@ -7,7 +7,14 @@ window.onload = () => {
     .then(response => response.json())
     .then((data) => {
         console.log(data.response.results[0].webTitle)
+        let healineList = new HealineList()
+
+        //forEach
         let headlineModel = new HeadlineModel(data.response.results[0])
+        // healineList.addHealine(headlineModel)
+
+
+
         let headlineView = new HeadlineView(headlineModel)
         let headlineController = new HeadlineController(headlineView)
 
@@ -16,3 +23,4 @@ window.onload = () => {
 
 
 }
+
