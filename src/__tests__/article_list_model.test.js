@@ -11,7 +11,7 @@ describe("List model", () => {
         headlineList.add(headline)
 
         expect(headlineList.list.length).toBe(1)
-        expect(headlineList.list).toEqual([{title: 'Test Headline'}])
+        expect(headlineList.list).toEqual([{title: 'Test Headline', id: 0}])
     })
 
     test("returns headline list", () => {
@@ -23,7 +23,7 @@ describe("List model", () => {
         headlineList.add(headline2)
 
 
-        expect(headlineList.return()).toEqual([{title: 'Test Headline'}, {title: "Test 2 Headline"}])
+        expect(headlineList.return()).toEqual([{title: 'Test Headline', id: 0}, {title: "Test 2 Headline", id: 1}])
 
     })
 
