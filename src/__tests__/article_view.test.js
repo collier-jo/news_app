@@ -25,7 +25,7 @@ describe("Headline View", () => {
                 return testArray
             }
         }
-        const spy = jest.spyOn(headlineList, "return").mockImplementation(() => [{title: "Mock Title"}]);
+        const spy = jest.spyOn(headlineList, "return").mockImplementation(() => [{title: "Mock Title", url: "Mock URL"}]);
         
         let headlineView = new HeadlineView(headlineList)
 
