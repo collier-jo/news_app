@@ -2,5 +2,6 @@
 module.exports = {
     name: "Mock User",
     webTitle: "Mock webTitle",
-    webUrl: "Mock webURL"
+    webUrl: "Mock webURL",
+    fields: {thumbnail: "Mock Thumbnail"}
 }
