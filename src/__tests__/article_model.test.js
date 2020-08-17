@@ -1,3 +1,6 @@
+const HeadlineModel = require('../article_model');
+
+
 const response = require("../response")
 
 
@@ -8,6 +11,8 @@ describe("Headline", () => {
 
         var headline = new HeadlineModel(response)
 
-        expect(headline.readOne()).toEqual("Mock webTitle")
+        expect(headline.readOne()).toEqual({title: "Mock webTitle", url: "Mock webURL", pic: "Mock Thumbnail"})
     })
 })
+
+
