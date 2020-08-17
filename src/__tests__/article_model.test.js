@@ -1,3 +1,6 @@
+const HeadlineModel = require('../article_model');
+
+
 const response = require("../response")
 
 

@@ -14,4 +14,17 @@ describe("List model", () => {
         expect(headlineList.list).toEqual([{title: 'Test Headline'}])
     })
 
+    test("returns headline list", () => {
+
+        headlineList = new HeadlineList()
+        let headline = { title: "Test Headline" }
+        headlineList.add(headline)
+        let headline2 = { title: "Test 2 Headline"}
+        headlineList.add(headline2)
+
+
+        expect(headlineList.return()).toEqual([{title: 'Test Headline'}, {title: "Test 2 Headline"}])
+
+    })
+
 })
