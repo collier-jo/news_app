@@ -4,10 +4,12 @@
 class HeadlineModel {
   constructor(data){
     this.title = data.webTitle 
+    this.url = data.webUrl
   }
 
   readOne(){
-    return this.title
+    var headline = {title: this.title, url: this.url}
+    return headline
   }
 }
 

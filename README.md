@@ -29,7 +29,7 @@ So I know what the big stories of the day are /
 
 As a busy politiciann 
 I can click a link to see the original news article
-So that I can get an in depth understanding of a very important story
+So that I can get an in depth understanding of a very important story 
 
 As a busy politician
 I can see a summary of a news article
