@@ -11,7 +11,7 @@ class HeadlineView{
     let headlines = this.list.return()
 
     headlines.forEach((item) => {
-      html += `<li><h2>${item.title}</h2><p>Follow this <a href="${item.url}">link</a></span> to find out more.</p></li>`
+      html += `<li><h2>${item.title}</h2><p id="summarise_article_${item.id}"></p><p>Follow this <a href="${item.url}">link</a></span> to find out more.</p></li>`
     });
 
     html += "</ul></div>"
