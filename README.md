@@ -41,11 +41,11 @@ So that I have something nice to look at ///
 
 As a busy politician
 I can read the site comfortably on my phone
-Just in case my laptop breaks 
+Just in case my laptop breaks / 
 
 As a busy politician
 I can see whizzy animations in the app
-To make my news reading more fun
+To make my news reading more fun 
 ```
 
 ### Domain Model:
