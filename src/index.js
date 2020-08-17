@@ -7,17 +7,19 @@ window.onload = () => {
     .then(response => response.json())
     .then((data) => {
         console.log(data.response.results[0].webTitle)
-        let healineList = new HealineList()
-
-        //forEach
-        let headlineModel = new HeadlineModel(data.response.results[0])
-        // healineList.addHealine(headlineModel)
-
-
-
-        let headlineView = new HeadlineView(headlineModel)
+        
+        let headlineList = new HeadlineList()
+       
+        let headlineView = new HeadlineView(headlineList)
+        
         let headlineController = new HeadlineController(headlineView)
 
+        for(var i = 0; i < data.response.results.length; i ++){
+            let headlineModel = new HeadlineModel(data.response.results[i])
+
+            headlineList.add(headlineModel)
+        }
+        
         return headlineController.addToPage()
     })
 
